@@ -4,7 +4,7 @@
 >
     <div class="flex h-16 shrink-0 items-center gap-2 border-b border-slate-800 px-6">
         <x-application-logo class="h-8 w-auto fill-current text-indigo-400" />
-        <span class="text-lg font-semibold tracking-tight text-white">{{ config('app.name') }}</span>
+        <span class="text-lg font-semibold tracking-tight text-white">{{ config('app.name', 'ERP Core') }}</span>
     </div>
 
     <nav class="flex-1 space-y-1 overflow-y-auto px-3 py-4">

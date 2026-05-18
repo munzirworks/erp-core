@@ -1,7 +1,7 @@
 <x-dashboard-layout>
     <x-layout.page-header
         :title="__('User management')"
-        :description="__('Administrator-only area for managing system users.')"
+        :description="__('Manage ERP user accounts, roles, and access for your organization.')"
     />
 
     <x-ui.card>

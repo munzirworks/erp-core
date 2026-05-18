@@ -1,20 +1,13 @@
-# Laravel 11 Starter Kit
+# ERP Core
 
-A Laravel 11 application starter with authentication, dashboard layout, and role-based access control.
+Laravel 11 ERP foundation with authentication, dashboard layout, and role-based access control.
 
 ## Features
 
 - **Laravel Breeze** (Blade) — login, registration, password reset, profile
-- **Dashboard layout** — sidebar, topbar, reusable Blade components
+- **ERP dashboard** — sidebar layout with admin and staff areas
 - **Roles** — `admin` and `staff` with middleware protection
-- **Admin area** — user listing (admin only)
-
-## Requirements
-
-- PHP 8.2+
-- Composer
-- Node.js 18+ (for Vite)
-- MySQL, PostgreSQL, or SQLite
+- **User management** — admin listing of system users
 
 ## Setup
 
@@ -22,18 +15,13 @@ A Laravel 11 application starter with authentication, dashboard layout, and role
 composer install
 cp .env.example .env
 php artisan key:generate
-php artisan migrate --seed
+php artisan migrate
 npm install
 npm run build
 php artisan serve
 ```
 
-## Demo accounts
-
-| Email | Password | Role |
-|-------|----------|------|
-| `admin@example.com` | `password` | Admin |
-| `staff@example.com` | `password` | Staff |
+Run `php artisan db:seed` only on a fresh database if you need demo accounts.
 
 ## License
 

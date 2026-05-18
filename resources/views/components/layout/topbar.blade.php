@@ -11,7 +11,7 @@
     </button>
 
     <div class="hidden lg:block">
-        <p class="text-sm text-slate-500">{{ __('Welcome back') }}, <span class="font-medium text-slate-900">{{ auth()->user()->name }}</span></p>
+        <p class="text-sm text-slate-500">{{ __('Welcome back to :app', ['app' => config('app.name')]) }}, <span class="font-medium text-slate-900">{{ auth()->user()->name }}</span></p>
     </div>
 
     <div class="flex items-center gap-3">

@@ -11,16 +11,16 @@ class DashboardController extends Controller
         return view('dashboard.index', [
             'stats' => [
                 [
-                    'label' => 'Your role',
+                    'label' => __('Access level'),
                     'value' => auth()->user()->role->label(),
                 ],
                 [
-                    'label' => 'Account',
+                    'label' => __('Login email'),
                     'value' => auth()->user()->email,
                 ],
                 [
-                    'label' => 'Status',
-                    'value' => 'Active',
+                    'label' => __('Account status'),
+                    'value' => __('Active'),
                 ],
             ],
         ]);

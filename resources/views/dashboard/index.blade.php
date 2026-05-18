@@ -1,8 +1,8 @@
 <x-dashboard-layout>
     <div class="mb-6">
         <x-layout.page-header
-            :title="__('Dashboard')"
-            :description="__('Overview of your account.')"
+            :title="__('ERP Dashboard')"
+            :description="__('Overview of your workspace, access level, and account status.')"
         />
     </div>
 
@@ -15,9 +15,9 @@
         @endforeach
     </div>
 
-    <x-ui.card :title="__('Welcome')">
+    <x-ui.card :title="__('Getting started')">
         <p class="text-sm text-slate-600">
-            {{ __('You are signed in. This starter kit includes authentication, a dashboard layout, and role-based access for admin and staff users.') }}
+            {{ __('Welcome to the ERP system. Use this dashboard as your home base for daily operations. Modules such as inventory, sales, purchasing, and accounting can be connected here as your implementation grows.') }}
         </p>
 
         @if (auth()->user()->isAdmin())

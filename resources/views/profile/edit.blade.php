@@ -1,7 +1,7 @@
 <x-dashboard-layout>
     <x-layout.page-header
         :title="__('Profile')"
-        :description="__('Update your account information and password.')"
+        :description="__('Manage your ERP account profile, email, and password.')"
     />
 
     <div class="space-y-6">

@@ -41,6 +41,6 @@ class RoleMiddlewareTest extends TestCase
         $this->actingAs($user)
             ->get(route('dashboard'))
             ->assertOk()
-            ->assertSee('Dashboard');
+            ->assertSee('ERP Dashboard');
     }
 }
